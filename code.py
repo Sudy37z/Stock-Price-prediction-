@@ -65,4 +65,13 @@ regressor.compile(optimizer='adam', loss = 'mean_squared_error')
 regressor.fit(X_train,y_train, epochs = 100, batch_size=32)
 
 
+#Real stock price of 2017
+
+dataset_test = pd.read_csv("D:\stock predictions using rnn\L&T_test.csv")
+real_stock_price = dataset_test.iloc[:,1:2].values
+
+
+
+
+
 
